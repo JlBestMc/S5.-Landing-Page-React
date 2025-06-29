@@ -4,7 +4,7 @@ interface LogoProps {
 }
 
 export default function Logo({src ,styles=""}:LogoProps) {
-    const baseClasses = "w-full";
+    const baseClasses = "";
     return (
     <img className={`${baseClasses} ${styles}`} src={src}></img>
     );
