@@ -1,21 +1,21 @@
-import './App.css'
-import Button from './Button' 
-import Card from './Card'
-import Hero from './Hero'
+import Button from "./components/atoms/Button";
 
 function App() {
- const nombre1= "Juan"
- const nombre2= "Luis"
+
   return (
     <>
-   
-      <Button  nombre = {nombre1} edad = {26}/>
-      <Button  nombre = {nombre2} edad = {55}/>
-      <Card/>
-      <Hero/>
+    <div>
+      <Button content="Get it on Chrome" variant="btnBlue" />
+      </div>
+      <div>
+      <Button content="Login" variant="btnRed" />
+      </div>
+      <div>
+      <Button content="Get it on Firefox" variant="btnWhite" />
+      </div>
 
     </>
-  )
+  );
 }
 
-export default App
+export default App;
