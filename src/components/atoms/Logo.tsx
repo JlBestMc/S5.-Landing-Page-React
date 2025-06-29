@@ -6,6 +6,6 @@ interface LogoProps {
 export default function Logo({src ,styles=""}:LogoProps) {
     const baseClasses = "w-full";
     return (
-    <img className={`${baseClasses} ${src} ${styles}`}></img>
+    <img className={`${baseClasses} ${styles}`} src={src}></img>
     );
 }

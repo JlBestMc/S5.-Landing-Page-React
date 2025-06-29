@@ -19,7 +19,7 @@ function App() {
         <Anchor content="CONTACT" ref="#contact"/>
       </div>
       <div>
-        <Logo src="./logo-bookmark.svg"/>
+        <Logo src="./assets/logo-bookmark.svg"/>
       </div>
     </>
   );
