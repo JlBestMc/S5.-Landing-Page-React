@@ -79,7 +79,7 @@ export default function Navbar({
             Contact
           </Anchor>
           <hr className="w-[80%] md:hidden opacity-30 text-white" />
-          <Button content="LOGIN" variant="btnMobile" styles="md:px-7 md:py-2 hover:bg-gray-700 md:border-red-400 tracking-widest md:text-sm md:bg-red-400 md:hover:text-red-400"></Button>
+          <Button content="LOGIN" variant="btnMobile" styles="md:px-7 md:py-2 bg-gray-700 hover:bg-gray-700 md:border-red-400 tracking-widest md:text-sm md:bg-red-400 md:hover:bg-white md:hover:text-red-400"></Button>
         </nav>
       </div>
   );

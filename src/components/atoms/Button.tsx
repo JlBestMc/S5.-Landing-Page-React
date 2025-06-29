@@ -18,7 +18,7 @@ export default function Button({
     btnRed: "px-7 py-2 border-red-400 tracking-widest text-sm bg-red-400 hover:text-red-400 text-white hover:bg-white",
     btnWhite:
       "py-4 px-8 bg-white text-gray-600 border-white hover:border-gray-500 shadow-lg",
-    btnMobile:"text-white bg-gray-700 border-white text-3xl px-46 py-5 text-center flex justify-center w-[80%]"
+    btnMobile:"text-white border-white text-3xl px-46 py-5 text-center flex justify-center w-[80%]"
   };
 
   return (
