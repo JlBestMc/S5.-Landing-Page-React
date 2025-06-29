@@ -67,19 +67,19 @@ export default function Navbar({
           <hr className="w-[80%] md:hidden opacity-30 text-white" />
           <Anchor
             ref="#pricing"
-            styles="text-white text-2xl md:text-gray-700 md:text-sm md:hover:text-red-400 py-3 px-6"
+            styles="text-white text-2xl md:text-gray-700 md:text-sm md:hover:text-red-400 md:py-3 md:px-6 md:hover:text-red-400 md:tracking-widest md:text-sm md:font-semibold md:text-[#353541] cursor-[url('./assets/cursor.cur'),_auto] transition duration-300 ease-in-out"
           >
             Pricing
           </Anchor>
           <hr className="w-[80%] md:hidden opacity-30 text-white" />
           <Anchor
             ref="#contact"
-            styles="text-white text-2xl md:text-gray-700 md:text-sm md:hover:text-red-400 py-3 px-6"
+            styles="text-white text-2xl md:text-gray-700 md:text-sm md:hover:text-red-400 md:py-3 md:px-6 md:hover:text-red-400 md:tracking-widest md:text-sm md:font-semibold md:text-[#353541] cursor-[url('./assets/cursor.cur'),_auto] transition duration-300 ease-in-out"
           >
             Contact
           </Anchor>
           <hr className="w-[80%] md:hidden opacity-30 text-white" />
-          <Button content="LOGIN" styles="md:px-7 md:py-2 md:border-red-400 tracking-widest md:text-sm md:bg-red-400 md:hover:text-red-400 text-white bg-gray-700 border-white"></Button>
+          <Button content="LOGIN" variant="btnMobile" styles="md:px-7 md:py-2 hover:bg-gray-700 md:border-red-400 tracking-widest md:text-sm md:bg-red-400 md:hover:text-red-400"></Button>
         </nav>
       </div>
   );
