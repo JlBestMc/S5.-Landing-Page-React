@@ -1,5 +1,6 @@
 import Button from "./components/atoms/Button";
-import Anchor from "./components/atoms/Anchor";
+import Anchor from "./components/atoms/anchor";
+import Logo from "./components/atoms/Logo";
 
 function App() {
 
@@ -16,6 +17,9 @@ function App() {
       </div>
       <div>
         <Anchor content="CONTACT" ref="#contact"/>
+      </div>
+      <div>
+        <Logo src="./logo-bookmark.svg"/>
       </div>
     </>
   );
