@@ -4,9 +4,9 @@ function App() {
 
   return (
     <>
-      <Button content="Get it on Chrome" variant="blue" />
-      <Button content="Login" variant="red" />
-      <Button content="Get it on Firefox" variant="white" />
+      <Button content="Get it on Chrome" variant="btnBlue" />
+      <Button content="Login" variant="btnRed" />
+      <Button content="Get it on Firefox" variant="btnWhite" />
 
     </>
   );
