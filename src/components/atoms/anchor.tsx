@@ -5,8 +5,8 @@ interface AnchorProps {
 }
 
 export default function Anchor({ ref, styles = "", children }: AnchorProps) {
-    return (
-    <a className={`${styles}`} href={ref} >
+  return (
+    <a className={`${styles}`} href={ref}>
       {children}
     </a>
   );
