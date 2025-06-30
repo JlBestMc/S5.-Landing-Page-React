@@ -15,10 +15,12 @@ export default function Button({
   const variants = {
     btnBlue:
       "py-4 px-8 bg-[#5465df] hover:text-[#5465df] border-[#5465df] text-white hover:bg-white",
-    btnRed: "px-7 py-2 border-red-400 tracking-widest text-sm bg-red-400 hover:text-red-400 text-white hover:bg-white",
+    btnRed:
+      "px-7 py-2 border-red-400 tracking-widest text-sm bg-red-400 hover:text-red-400 text-white hover:bg-white",
     btnWhite:
       "py-4 px-8 bg-white text-gray-600 border-white hover:border-gray-500 shadow-lg",
-    btnMobile:"text-white border-white text-3xl px-46 py-5 text-center flex justify-center w-[80%]"
+    btnMobile:
+      "text-white border-white text-3xl px-46 py-5 text-center flex justify-center w-[80%]",
   };
 
   return (
