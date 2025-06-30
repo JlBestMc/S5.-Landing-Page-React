@@ -56,7 +56,8 @@ export default function Features() {
                                 {FEATURES[key].description}
                             </p>
                             <Button
-                                styles="shadow bg-[#5265E1] text-white rounded-lg py-6 px-10 font-bold md:block hidden hover:cursor-pointer"
+                                variant="btnBlue"
+                                styles="shadow rounded-lg py-3 px-6 md:block hidden"
                                 content="More info"
                             />
                         </div>

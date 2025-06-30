@@ -30,7 +30,7 @@ export default function Navbar({
 
     setNavBarStyles(() =>
       burgerOpen
-        ? "w-full h-full top-0 left-0 fixed flex flex-col justify-center gap-10 z-10 bg-gray-700"
+        ? "w-full h-full top-0 left-0 fixed flex flex-col justify-center gap-10 z-10 bg-[#20324ef0]"
         : "hidden"
     );
 
@@ -55,7 +55,7 @@ export default function Navbar({
         </button>
 
         <nav
-          className={`${navBarStyles} md:grid md:grid-cols-4 gap-10 justify-items-center items-center text-gray-700 md:text-black uppercase font-medium tracking-widest md:static md:bg-transparent`}
+          className={`${navBarStyles} md:grid md:grid-cols-4 gap-5 justify-items-center items-center text-gray-700 md:text-black uppercase font-medium tracking-widest md:static md:bg-transparent`}
         >
           <hr className="w-[80%] md:hidden opacity-30 text-white" />
           <Anchor
@@ -79,7 +79,7 @@ export default function Navbar({
             Contact
           </Anchor>
           <hr className="w-[80%] md:hidden opacity-30 text-white" />
-          <Button content="LOGIN" variant="btnMobile" styles="md:px-7 md:py-2 bg-gray-700 hover:bg-gray-700 md:border-red-400 tracking-widest md:text-sm md:bg-red-400 md:hover:bg-white md:hover:text-red-400"></Button>
+          <Button content="LOGIN" variant="btnMobile" styles="md:px-7 md:py-2 bg-[#20324ef0] hover:text-[#20324ef0] hover:border-blue-950 hover:bg-white md:border-red-400 tracking-widest md:text-sm md:bg-red-400 md:hover:bg-white md:hover:text-red-400"></Button>
         </nav>
       </div>
   );
