@@ -33,6 +33,11 @@ export const FEATURES: Record<string, Feature> = {
   },
 };
 
+export interface Dropdown {
+  question: string;
+  answer: string;
+}
+
 export const FAQS: Dropdown[] = [
   {
     question: "What is Bookmark Manager?",
