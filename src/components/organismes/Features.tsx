@@ -11,7 +11,7 @@ export default function Features() {
   }
 
   return (
-    <section className="max-w-[1280px] mx-auto my-10 py-14">
+    <section className="max-w-[1280px] mx-auto my-10 pb-14">
       <div>
         <h2 className="text-4xl font-bold text-[#1d2440] mb-4 text-center">
           Features

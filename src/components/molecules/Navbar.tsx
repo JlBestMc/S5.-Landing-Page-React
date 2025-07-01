@@ -32,7 +32,7 @@ export default function Navbar({
 
     setNavBarStyles(() =>
       burgerOpen
-        ? "w-full h-full top-0 left-0 fixed flex flex-col justify-center gap-10 z-10 bg-[#20324ef0]"
+        ? "w-full h-full top-0 left-0 fixed flex flex-col justify-center  gap-10 z-10 bg-[#20324ef0]"
         : "hidden"
     );
 
@@ -41,13 +41,13 @@ export default function Navbar({
 
   return (
     <div
-      className={`max-w-[1200px] w-[80%] md:w-full mx-auto flex justify-between items-center ${containerPosition}`}
+      className={`max-w-[1200px] w-[80%] md:w-full mx-auto flex justify-between ${containerPosition}`}
     >
-      <Logo src={currentLogo} styles="z-20" />
+      <Logo src={currentLogo} styles="z-20 h-min mt-2" />
 
       <button
         onClick={handleBurgerClick}
-        className="md:hidden z-30 fixed top-15 right-6"
+        className="md:hidden z-30 fixed top-15 mt-2 right-6"
       >
         <Burger
           isOpen={isOpen}

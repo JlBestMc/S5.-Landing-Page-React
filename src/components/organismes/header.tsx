@@ -6,7 +6,7 @@ import bookmarkMobile from "../../assets/logo-bookmark-mobile.svg";
 
 export default function Header() {
   return (
-    <header className="max-w-[1280px] mx-auto my-5 py-10 text-gray-700 relative">
+    <header className="max-w-[1280px] mx-auto my-5 pt-10  text-gray-700 relative">
       <Navbar
         burgerIconSrc={burgerIcon}
         closeIconSrc={closeBurgerIcon}
