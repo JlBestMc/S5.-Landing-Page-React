@@ -1,6 +1,7 @@
-import Header from "./components/organismes/Header";
+import Header from "./components/organismes/header";
 import Features from "./components/organismes/Features";
 import Faqs from "./components/organismes/Faqs";
+import EmailForm from "./components/molecules/EmailForm";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header></Header>
       <Features></Features>
       <Faqs></Faqs>
+      <EmailForm></EmailForm>
     </>
   );
 }
