@@ -2,7 +2,7 @@ import EmailForm from "../molecules/EmailForm";
 
 export default function ContactUs() {
   return (
-    <section className="bg-[#5465df] mx-auto py-14">
+    <section className="bg-[#5465df] mx-auto py-10 mt-20">
       <div className="flex flex-col items-center justify-center">
         <p
           className="text-white text-sm font-semibold text-center my-10"

@@ -23,7 +23,7 @@ export default function Features() {
         </p>
       </div>
       <div className="grid justify-center justify-items-center">
-        <menu className="flex flex-col md:grid md:grid-cols-3 w-[80%] gap-6 md:justify-items-center border-b border-gray-300 mb-30 md:mb-20">
+        <menu className="flex flex-col md:grid md:grid-cols-3 w-[65%] gap-6 md:justify-items-center border-b border-gray-300 mb-30 md:mb-20">
           <hr className="md:hidden opacity-25" />
           {Object.keys(FEATURES).map((key) => (
             <div key={FEATURES[key].tabTitle}>
