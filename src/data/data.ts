@@ -32,3 +32,37 @@ export const FEATURES: Record<string, Feature> = {
       "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
   },
 };
+
+export interface Dropdown {
+  question: string;
+  answer: string;
+}
+
+export const FAQS: Dropdown[] = [
+  {
+    question: "What is Bookmark?",
+    answer:
+      "Bookmark Manager is a browser extension that allows you to easily manage and organize your bookmarks. You can save, edit, and share your bookmarks with just a few clicks.",
+  },
+  {
+    question: "How can I request a new browser?",
+    answer:
+      'To request a new browser, please visit our support page and fill out the request form. We are constantly working to add support for more browsers.',
+  },
+  {
+    question: "Is there a mobile version of Bookmark Manager?",
+    answer:
+      "Currently, Bookmark Manager is available as a browser extension for desktop browsers. A mobile version is in development and will be released soon.",
+  },
+  {
+    question: "What about other Chromium browsers?",
+    answer:
+      "Bookmark Manager is designed to work with all major Chromium-based browsers, including Google Chrome, Microsoft Edge, and Brave. If you encounter any issues, please contact our support team.",
+  },
+  {
+    question: "Is Bookmark Manager free?",
+    answer:
+      "Yes, Bookmark Manager is completely free to use. There are no hidden fees or subscriptions required.",
+  },
+  
+];
