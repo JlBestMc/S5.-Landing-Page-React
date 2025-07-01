@@ -1,21 +1,19 @@
-import './App.css'
-import Button from './Button' 
-import Card from './Card'
-import Hero from './Hero'
+import Header from "./components/organismes/header";
+import Features from "./components/organismes/Features";
+import Faqs from "./components/organismes/Faqs";
+import ContactUs from "./components/organismes/ContactUs";
+import Footer from "./components/organismes/Footer";
 
 function App() {
- const nombre1= "Juan"
- const nombre2= "Luis"
   return (
     <>
-   
-      <Button  nombre = {nombre1} edad = {26}/>
-      <Button  nombre = {nombre2} edad = {55}/>
-      <Card/>
-      <Hero/>
-
+      <Header></Header>
+      <Features></Features>
+      <Faqs></Faqs>
+      <ContactUs></ContactUs>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
