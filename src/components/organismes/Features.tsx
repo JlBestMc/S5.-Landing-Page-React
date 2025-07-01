@@ -11,7 +11,7 @@ export default function Features() {
     }
 
     return (
-        <section className="max-w-[1280px] mx-auto my-10 py-20 text-gray-700">
+        <section className="max-w-[1280px] mx-auto my-10 py-14">
             <div>
                 <h2 className="text-4xl font-bold text-[#1d2440] mb-4 text-center">Features</h2>
                 <p className="text-gray-500 text-xl max-w-xl mx-auto text-center my-10">
@@ -20,7 +20,7 @@ export default function Features() {
                 </p>
             </div>
             <div className="grid justify-center justify-items-center">
-                <menu className="flex flex-col md:grid md:grid-cols-3 w-[80%] gap-6 md:justify-items-center mb-30 md:mb-20">
+                <menu className="flex flex-col md:grid md:grid-cols-3 w-[80%] gap-6 md:justify-items-center border-b border-gray-300 mb-30 md:mb-20">
                     <hr className="md:hidden opacity-25" />
                     {Object.keys(FEATURES).map(key => (
                         <div key={FEATURES[key].tabTitle}>
@@ -57,7 +57,7 @@ export default function Features() {
                             </p>
                             <Button
                                 variant="btnBlue"
-                                styles="shadow rounded-lg py-3 px-6 md:block hidden"
+                                styles="shadow  py-3 px-6 md:block hidden"
                                 content="More info"
                             />
                         </div>
