@@ -24,7 +24,10 @@ export default function Button({
   };
 
   return (
-    <button className={`${baseClasses} ${variants[variant]} ${styles}`}>
+    <button
+      type="submit"
+      className={`${baseClasses} ${variants[variant]} ${styles}`}
+    >
       {content}
     </button>
   );
