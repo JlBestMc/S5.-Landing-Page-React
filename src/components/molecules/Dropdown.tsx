@@ -18,11 +18,11 @@ export default function Dropdown() {
           className={`py-4 border-t border-gray-300 ${index === 4 ? "border-b" : ""}`}
         >
           <button
-            className="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 hover:text-red-400 cursor-[url('./assets/cursor.cur'),_auto] transition duration-300 ease-in-out"
+            className="w-full flex justify-between items-center text-left font-semibold text-lg text-[#1d2440] hover:text-red-400 cursor-[url('./assets/cursor.cur'),_auto] transition duration-300 ease-in-out"
             onClick={() => handleSelect(faq.question)}
           >
             <span
-              className={`${selected === faq.question ? "text-black hover:text-red-400" : ""}`}
+              className={`${selected === faq.question ? "text-[#1d2440] hover:text-red-400" : ""}`}
             >
               {faq.question}
             </span>
