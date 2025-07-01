@@ -7,28 +7,42 @@ export default function Dropdown() {
   const [selected, setSelected] = useState<string | null>(null);
 
   const handleSelect = (question: string) => {
-    setSelected(prev => (prev === question ? null : question));
+    setSelected((prev) => (prev === question ? null : question));
   };
 
   return (
     <div className="w-full max-w-xl mx-auto mt-8">
       {FAQS.map((faq: Dropdown, index: number) => (
-        <div key={index} className="border-b py-4">
+        <div
+          key={index}
+          className={`py-4 border-t border-gray-300 ${index === 4 ? "border-b" : ""}`}
+        >
           <button
-            className="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 hover:text-blue-500"
+            className="w-full flex justify-between items-center text-left font-semibold text-lg text-gray-800 hover:text-red-400 cursor-[url('./assets/cursor.cur'),_auto] transition duration-300 ease-in-out"
             onClick={() => handleSelect(faq.question)}
           >
-            <span className={`${selected === faq.question ? "text-blue-600" : ""}`}>
+            <span
+              className={`${selected === faq.question ? "text-black hover:text-red-400" : ""}`}
+            >
               {faq.question}
             </span>
-            <img
-              src={selected === faq.question ? arrowDown : arrowUp}
-              alt={selected === faq.question ? "Collapse" : "Expand"}
-              
-            />
+            {selected === faq.question ? (
+              <img
+                src={arrowDown}
+                alt="Flecha roja abajo"
+                className=" transition-transform duration-200 rotate-180"
+              />
+            ) : (
+              <img
+                src={arrowUp}
+                alt="Flecha azul arriba"
+                className="transition-transform duration-200 rotate-0"
+
+              />
+            )}
           </button>
           {selected === faq.question && (
-            <p className="mt-2 text-gray-600 text-sm leading-relaxed">
+            <p className="mt-2 text-gray-600 text-md leading-relaxed">
               {faq.answer}
             </p>
           )}
