@@ -39,7 +39,7 @@ export default function EmailForm() {
               <span className="absolute top-3 right-3 text-red-500 font-bold">
                 <img src={iconError}></img>
               </span>
-              <p className="text-xs text-white bg-red-400 pl-1 italic">
+              <p className="text-xs rounded-b py-1 text-white bg-red-400 pl-3 italic">
                 Whoops, make sure it's an email
               </p>
             </>
