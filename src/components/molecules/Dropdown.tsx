@@ -11,7 +11,7 @@ export default function Dropdown() {
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto mt-8">
+    <div className="w-4/5 md:w-full max-w-xl mx-auto mt-8">
       {FAQS.map((faq: Dropdown, index: number) => (
         <div
           key={index}
@@ -37,7 +37,6 @@ export default function Dropdown() {
                 src={arrowUp}
                 alt="Flecha azul arriba"
                 className="transition-transform duration-200 rotate-0"
-
               />
             )}
           </button>

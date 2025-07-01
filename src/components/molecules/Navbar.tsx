@@ -4,6 +4,8 @@ import Burger from "../atoms/Burger";
 import Logo from "../atoms/Logo";
 import Anchor from "../atoms/anchor";
 import Button from "../atoms/Button";
+import facebookIcon from "../../assets/icon-facebook.svg";
+import twitterIcon from "../../assets/icon-twitter.svg";
 
 interface NavbarProps {
   burgerIconSrc: string;
@@ -84,6 +86,10 @@ export default function Navbar({
           variant="btnMobile"
           styles="md:px-7 md:py-2 bg-[#20324ef0] hover:text-[#20324ef0] hover:border-blue-950 hover:bg-white md:border-red-400 tracking-widest md:text-sm md:bg-red-400 md:hover:bg-white md:hover:text-red-400 md:hover:border-red-400"
         ></Button>
+        <div className="flex gap-5">
+          <img src={facebookIcon}></img>
+          <img src={twitterIcon}></img>
+        </div>
       </nav>
     </div>
   );
