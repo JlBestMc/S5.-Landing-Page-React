@@ -1,69 +1,95 @@
-# React + TypeScript + Vite
+# 📖 Sprint 5 - Bookmark Landing Page React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🧠 Goals
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Put into practice React concepts as components, hooks and props.
+- Using typescript correctly.
+- Structure the project well using atomic design.
 
-## Expanding the ESLint configuration
+## 📝 Key Tasks for the project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Develop a landing page with functional sections as "Faqs" and "Features".
+- Recognize how to separate components to be reusable.
+- Make a responsive and improved design.
 
-```js
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+## 🎥 Preview
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 📚  Bookmark Landing Page View
+![Store Preview](preview/preview.gif)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+---
+
+
+## 🛠️ Getting Started
+
+### 1️⃣ Clone this repository
+
+```bash
+https://github.com/JlBestMc/S5.-Landing-Page-React.git
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2️⃣ Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+Make sure you have Node.js installed. Then install the packages:
 
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```bash
+npm install
 ```
+
+### 3️⃣ Start Development Server
+
+```bash
+npm run server
+```
+
+
+## 📁 Project Structure
+
+```
+📦 Landing-Page
+┣ 📂 public
+┣ 📂 preview
+┣ 📂 src/
+  ┣ 📂 assets  
+  ┣ 📂 Components
+    ┣ 📂 Atoms
+      ┣ 📄 Anchor.tsx
+      ┣ 📄 Burger.tsx
+      ┣ 📄 Button.tsx
+      ┣ 📄 Logo.tsx
+      ┗ 📄 Tab.tsx
+    ┣ 📂 Molecules
+      ┣ 📄 Card.tsx
+      ┣ 📄 Dropdown.tsx
+      ┣ 📄 EmailForm.tsx
+      ┣ 📄 Hero.tsx
+      ┗ 📄 Navbar.tsx
+    ┣ 📂 Cards
+      ┣ 📄 ContactUs.tsx
+      ┣ 📄 Faqs.tsx
+      ┣ 📄 Features.tsx
+      ┣ 📄 Footer.tsx
+      ┗ 📄 Header.tsx
+    ┣ 📂 data
+      ┗ 📄 data.ts
+    ┣ 📄 app.tsx
+    ┣ 📄 main.tsx
+    ┗ 📄 styles.css
+┗ 📄 index.html
+
+```
+
+## 🛠 Technologies Used
+
+    - TypeScript
+    - React
+    - HTML
+    - CSS (Tailwind)
+
+
+![Technologie Icons](https://skillicons.dev/icons?i=html,css,tailwind,typescript,react,vite,nodejs "Technologie Icons")
+
+
+## ⏳ Project Status
